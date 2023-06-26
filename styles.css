@@ -12,6 +12,42 @@ html {
     height: 100vh;
 }
 
+.project-title {
+    display: flex;
+    justify-content: center;
+}
+
+.project-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.project-image {
+    width: 300px;
+    max-height: 300px;
+    object-fit: cover;
+
+}
+
+.project-subtitle {
+    display: flex;
+    justify-content: center;
+}
+
+.project-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-text {
+    width: 40%;
+    text-align: center;
+    padding: 20px;
+}
+
 .subtext { 
     margin-top: -1%;
     color: gray;
