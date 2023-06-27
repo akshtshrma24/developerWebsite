@@ -54,8 +54,6 @@ html {
 }
 
 .tab-text {
-    bottom: 0;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,10 +67,6 @@ html {
 
 .tab-list {
     list-style: none;
-    display: flex;
-    gap: 3rem;
-    justify-content: flex-start;
-    margin: 0;
     padding: 0;
 }
 
@@ -84,8 +78,6 @@ html {
 .tab-list a {
     display: inline-block;
     text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
     color: white;
 }
 
@@ -162,4 +154,28 @@ html {
 
 .icon-list a:hover {
     color: darkgray;
+}
+
+.card-other {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.card-other img {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card-other-content {
+    flex: 1;
+}
+
+.card-image-on-right {
+    flex-direction: row-reverse;
 }
