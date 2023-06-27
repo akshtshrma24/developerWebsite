@@ -53,13 +53,44 @@ html {
     color: gray;
 }
 
-.projects-text {
+.tab-text {
     bottom: 0;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.tab-text a {
+    color: white;
+    text-decoration: underline;
+}
+
+.tab-list {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.tab-list li {
+    display: inline-block;
+}
+
+
+.tab-list a {
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+}
+
+.tab-list a:hover {
+    color: darkgray;
 }
 
 .card-container {
