@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coolest Kubernates</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="project-title">
+        <h1>Kubernates Pi Cluster</h1>
+    </div>
+    <div class="project-image-container">
+        <img src="https://user-images.githubusercontent.com/63530023/248638986-2f7fa6a5-ac57-4f63-a8ad-d8df91ea80ab.jpg" class="project-image" alt="image">
+    </div>
+
+
+    <div class="project-subtitle" style="margin-top: 5%;">
+        <h3>Technologies Used</h3>
+    </div>
+    <div class="project-text-container">
+        <div class="project-text">
+            <p>
+                I used several technologies here to put this project together. First I used a 5 port tplink network switch
+                then I obviously had 4 pis and I also had a 16x4 LCD screen which was connected to one of the pis. 
+            </p>
+        </div>
+    </div>
+
+    <div class="project-subtitle">
+        <h3>Process</h3>
+    </div>
+    <div class="project-text-container">
+        <div class="project-text">
+            <p>
+                The process started with me trying to create a lab around my 3d printer in my room. I wanted there to be a 
+                dns server to access my various end points easier. I also needed to monitor my internet connection as I 
+                created a subnet so that I could have my own network in my room no one could access but me. I also had 
+                octopi running on one of my pis so that I could have remote access to my 3d printer. I also had a server 
+                runing underneath the desk (an old laptop) that ran grafana and prometheus and collected metrics of
+                all the pis. It also ran a program where I could paste a song and it would play through speakers from my desk
+                The LCD Screen was connected to one of the pis where it colleted info from prometheus running on the server.
+
+                Once I made all of these and dockerized it, I got a switch a crimping tool some ethernet hats and tips, and 
+                some old ethernet cables. Cut the cables to the correct sizes crimped them and connected them. I then 3d printed
+                a case (the white stuff)
+            </p>
+        </div>
+    </div>
+
+    <div class="project-subtitle">
+        <h3>Results</h3>
+    </div>
+    <div class="project-text-container">
+        <div class="project-text">
+            <p>
+                I was able to create a 4 node pi cluster with a server as well that displayed its metrics on a physical screen
+                so you dont need to access any local website to see its quick metrics. A dns server, remote access to my 3d printer,
+                and internet speeds monitoring with a subnet and private network which can only be accessed with a password. 
+            </p>
+        </div>
+    </div>
+</body>
+</html>
