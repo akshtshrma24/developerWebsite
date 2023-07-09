@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coolest VPN</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="project-title">
+        <h1>Road Warrior VPN Server</h1>
+    </div>
+    <div class="project-image-container">
+        <img src="https://user-images.githubusercontent.com/63530023/252122037-bce850ce-2737-47c1-a079-122ccf3373e2.jpg" class="project-image" style="width:min-content" alt="image">
+    </div>
+
+
+    <div class="project-subtitle" style="margin-top: 5%;">
+        <h3>Technologies Used</h3>
+    </div>
+    <div class="project-text-container">
+        <div class="project-text">
+            <p>
+                This was one of the hardest projects I have done thus far. I used linux (ubuntu server), OPEN VPN, AWS, openWRT,
+                a raspberry pi, a patch pannel, and a network switch.
+            </p>
+        </div>
+    </div>
+
+    <div class="project-subtitle">
+        <h3>Process</h3>
+    </div>
+    <div class="project-text-container">
+        <div class="project-text">
+            <p>
+                The process started with me trying to create a way that members of the engineering club could access the devices
+                in the engineering club without actually being at the engineering club. We first started with drawing it out, where we 
+                would use a pi to create a subnet on the SJSU network, and then host a VPN on AWS where we would route all the LAN traffic
+                that was connected to the pi through the VPN. We did this by installing a custom OS on the pi called openWRT,
+                this allowed us to get router functionality on the pi. This allowed us to create the subnet as well. We then 
+                installed a server which ran monitoring for the VPN tracking its uptime and pinging us in a discord server if it
+                went down. We then routed all the devices through the roof (I broke only 2 tiles). Routed it to the patch pannel and from 
+                there into the network switch connected to our pi. 
+            </p>
+        </div>
+    </div>
+
+    <div class="project-subtitle">
+        <h3>Results</h3>
+    </div>
+    <div class="project-text-container">
+        <div class="project-text">
+            <p>
+                The entire club of over 300 people, and 40 developers now depend on the VPN server I setup. The speed at which the
+                development happens is much faster now thanks to the ability to develop remotely. 
+            </p>
+        </div>
+    </div>
+</body>
+</html>
